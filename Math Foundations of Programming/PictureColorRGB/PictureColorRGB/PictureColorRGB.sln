@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PictureColorRGB", "PictureColorRGB.csproj", "{352DB7D8-9842-4061-91FB-52377C93A516}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{352DB7D8-9842-4061-91FB-52377C93A516}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{352DB7D8-9842-4061-91FB-52377C93A516}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{352DB7D8-9842-4061-91FB-52377C93A516}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{352DB7D8-9842-4061-91FB-52377C93A516}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2A969D08-8346-4095-B76C-BBE6C536809C}
+	EndGlobalSection
+EndGlobal
