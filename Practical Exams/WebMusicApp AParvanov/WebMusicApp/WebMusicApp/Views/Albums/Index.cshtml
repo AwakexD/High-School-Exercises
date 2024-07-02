@@ -1,0 +1,48 @@
+﻿@using System.Security.Claims
+@model IEnumerable<WebMusicApp.Data.Entities.Album>
+
+@{
+    ViewData["Title"] = "Albums";
+}
+
+<div class="container mt-5">
+    <h1 class="mb-4">Albums</h1>
+
+    <p>
+        <a asp-action="Create" class="btn btn-primary">Create New</a>
+    </p>
+
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <a asp-action="Details" asp-route-id="@item.Id">
+                        <img src="@item.Picture" class="card-img-top" alt="@item.Name">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">@item.Name</h5>
+                        <p class="card-text">@item.Description</p>
+                        <ul class="list-unstyled">
+                            <li><strong>Category:</strong> @item.Category</li>
+                            <li><strong>Singers:</strong> @item.Singers</li>
+                            <li><strong>Price:</strong> @item.Price.ToString("C")</li>
+                            <li><strong>Quantity:</strong> @item.Quantity</li>
+                        </ul>
+                        <div class="d-flex justify-content-center align-items-center mt-3">
+                            <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info btn-sm m-3">Details</a>
+                            @if (item.Creator == this.User.FindFirstValue(ClaimTypes.NameIdentifier))
+                            {
+                                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary btn-sm m-3">Edit</a>
+                                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm m-3">Delete</a>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+@section Scripts {
+}
