@@ -1,0 +1,10 @@
+body {
+    background-color: #EEE;
+    font-size: 24pt;
+}
+.langBox {
+    border: 1px #AAA;
+    border-radius: 5px;
+    background-color: #CCC;
+    padding: 6px;
+}

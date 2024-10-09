@@ -1,0 +1,16 @@
+nav { 
+    background-color: #c9d1d6;
+}
+
+ul { 
+ display: flex;
+ justify-content: center;
+ list-style-type: none;
+}
+
+li {
+    border: 1px solid blue;
+    padding: 10px;
+    margin: 20px;
+    color: green;
+}
